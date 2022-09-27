@@ -2,7 +2,7 @@
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
 // import HelloWorld from './components/HelloWorld.vue'
-import { BubbleMessage } from 'js-dynamic-island'
+import { BubbleMessage, FoldMessage } from 'js-dynamic-island'
 function testBubble() {
   BubbleMessage({
     user: 'zack',
@@ -12,7 +12,7 @@ function testBubble() {
   })
 }
 function testFold() {
-  BubbleMessage({
+  FoldMessage({
     message: 'ot take to heart every thing you hear. do not take to heart every thing you hear. do not spend all; Whenever you find your wrongdoing',
     type: 'success'
   })
