@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "animejs": "^3.2.1",
-    "js-dynamic-island": "^2.0.1",
+    "js-dynamic-island": "^2.0.2",
     "require-path": "^0.3.0",
     "vue": "^3.2.37"
   },
