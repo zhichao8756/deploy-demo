@@ -42,7 +42,6 @@ function testMessage() {
   <button @click="testFold">折叠信息</button>
   <button @click="testMessage">弹框信息</button>
 </template>
-+
 <style scoped>
 .logo {
   height: 6em;
