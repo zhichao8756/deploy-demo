@@ -2,7 +2,7 @@
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
 // import HelloWorld from './components/HelloWorld.vue'
-import { BubbleMessage, FoldMessage, MessageBox, ProgressBox } from 'js-dynamic-island'
+import { BubbleMessage, FoldMessage, MessageBox, ProgressBox, Rate } from 'js-dynamic-island'
 function testBubble() {
   BubbleMessage({
     user: 'zack',
@@ -34,6 +34,11 @@ function progress() {
     console.log('done')
   })
 }
+function like() {
+  Rate({
+    title: '点个赞吧~'
+  })
+}
 </script>
 
 <template>
@@ -49,6 +54,8 @@ function progress() {
   <button @click="testFold">折叠信息</button>
   <button @click="testMessage">弹框信息</button>
   <button @click="progress">进度提示</button>
+  <button @click="like">进度提示</button>
+
 </template>
 <style scoped>
 .logo {
