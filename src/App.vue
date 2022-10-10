@@ -54,7 +54,7 @@ function like() {
   <button @click="testFold">折叠信息</button>
   <button @click="testMessage">弹框信息</button>
   <button @click="progress">进度提示</button>
-  <button @click="like">进度提示</button>
+  <button @click="like">点个赞吧</button>
 
 </template>
 <style scoped>
