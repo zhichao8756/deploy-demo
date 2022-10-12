@@ -2,7 +2,11 @@
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
 // import HelloWorld from './components/HelloWorld.vue'
-import { BubbleMessage, FoldMessage, MessageBox, ProgressBox, Rate } from 'js-dynamic-island'
+import { BubbleMessage, FoldMessage, MessageBox, ProgressBox, Rate, Spinner } from 'js-dynamic-island'
+function sleep(time) {
+  return new Promise((resolve, reject) =>
+      setTimeout(resolve, time))
+}
 function testBubble() {
   BubbleMessage({
     user: 'zack',
@@ -39,6 +43,11 @@ function like() {
     title: '点个赞吧~'
   })
 }
+async function loading() {
+  Spinner.show('加载中')
+  await sleep(3000)
+  Spinner.done()
+}
 </script>
 
 <template>
@@ -55,7 +64,7 @@ function like() {
   <button @click="testMessage">弹框信息</button>
   <button @click="progress">进度提示</button>
   <button @click="like">点个赞吧~</button>
-
+  <button @click="loading">加载组件~</button>
 </template>
 <style scoped>
 .logo {
