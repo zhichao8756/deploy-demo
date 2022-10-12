@@ -59,12 +59,51 @@ async function loading() {
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
   </div>
-  <button @click="testBubble">气泡信息</button>
-  <button @click="testFold">折叠信息</button>
-  <button @click="testMessage">弹框信息</button>
-  <button @click="progress">进度提示</button>
-  <button @click="like">点个赞吧~</button>
-  <button @click="loading">加载组件~</button>
+  <div class="container">
+    <div @click="testBubble">
+      <div class="icon-container" style="background: #7FE271"></div>
+      <span class="text-container">气泡信息</span>
+    </div>
+    <div @click="testFold">
+      <div class="icon-container" ></div>
+      <span class="text-container">折叠信息</span>
+    </div>
+    <div @click="testMessage">
+      <div class="icon-container" style="background: #ABAAB1">
+      </div>
+      <span class="text-container">弹框信息</span>
+    </div>
+
+    <div @click="progress">
+      <div class="icon-container" style="background: #7D4891">
+
+      </div>
+      <span class="text-container">进度提示</span>
+    </div>
+
+    <div @click="like">
+      <div class="icon-container" style="background: #FB8B0F">
+      </div>
+      <span class="text-container">点个赞吧</span>
+
+    </div>
+
+    <div @click="loading">
+      <div class="icon-container" >
+      </div>
+      <span class="text-container">加载组件</span>
+
+    </div>
+
+
+<!--    <button >气泡信息</button>
+    <button >折叠信息</button>
+    <button @click="testMessage">弹框信息</button>
+    <button @click="progress">进度提示</button>
+    <button @click="like">点个赞吧~</button>
+    <button @click="loading">加载组件~</button>-->
+  </div>
+
 </template>
 <style scoped>
 .logo {
@@ -77,5 +116,28 @@ async function loading() {
 }
 .logo.vue:hover {
   filter: drop-shadow(0 0 2em #42b883aa);
+}
+.container {
+  display: flex;
+  width: 300px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.icon-container {
+  margin: 20px 12px;
+  width: 60px;
+  height: 60px;
+  border-radius: 20%;
+  background-color: #ececec;
+  position: relative;
+}
+.text-container {
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
 }
 </style>
