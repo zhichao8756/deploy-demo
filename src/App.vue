@@ -2,7 +2,7 @@
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
 // import HelloWorld from './components/HelloWorld.vue'
-import { BubbleMessage, FoldMessage, MessageBox, ProgressBox, Rate, Spinner } from 'js-dynamic-island'
+import { BubbleMessage, FoldMessage, MessageBox, ProgressBox, Rate, Spinner, AddToCart } from 'js-dynamic-island'
 function sleep(time) {
   return new Promise((resolve, reject) =>
       setTimeout(resolve, time))
@@ -47,6 +47,12 @@ async function loading() {
   Spinner.show('加载中')
   await sleep(3000)
   Spinner.done()
+}
+function addTo() {
+  AddToCart({
+    beforeTitle: '添加至购物车',
+    afterTitle: '完成'
+  })
 }
 </script>
 
@@ -94,7 +100,12 @@ async function loading() {
       <span class="text-container">加载组件</span>
 
     </div>
+    <div @click="addTo">
+      <div class="icon-container" >
+      </div>
+      <span class="text-container">添加购物车</span>
 
+    </div>
 
 <!--    <button >气泡信息</button>
     <button >折叠信息</button>
