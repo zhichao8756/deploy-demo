@@ -34,7 +34,6 @@ a:hover {
 }
 
 body {
-  margin: 100px;
   display: flex;
   place-items: center;
   box-sizing: border-box;
@@ -50,6 +49,7 @@ body {
   position: relative;
   border: 10px solid black;
   border-radius: 47px;
+  scale: 0.8;
 }
 
 h1 {
