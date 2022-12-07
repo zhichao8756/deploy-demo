@@ -68,42 +68,42 @@ function addTo() {
   <div class="container">
     <div @click="testBubble">
       <div class="icon-container" style="background: #7FE271"></div>
-      <span class="text-container">气泡信息</span>
+      <span class="text-container">bubble msg</span>
     </div>
     <div @click="testFold">
       <div class="icon-container" ></div>
-      <span class="text-container">折叠信息</span>
+      <span class="text-container">fold msg</span>
     </div>
     <div @click="testMessage">
       <div class="icon-container" style="background: #ABAAB1">
       </div>
-      <span class="text-container">弹框信息</span>
+      <span class="text-container">message Box</span>
     </div>
 
     <div @click="progress">
       <div class="icon-container" style="background: #7D4891">
 
       </div>
-      <span class="text-container">进度提示</span>
+      <span class="text-container">progress</span>
     </div>
 
     <div @click="like">
       <div class="icon-container" style="background: #FB8B0F">
       </div>
-      <span class="text-container">点个赞吧</span>
+      <span class="text-container">star me :)</span>
 
     </div>
 
     <div @click="loading">
       <div class="icon-container" >
       </div>
-      <span class="text-container">加载组件</span>
+      <span class="text-container">loading</span>
 
     </div>
     <div @click="addTo">
       <div class="icon-container" >
       </div>
-      <span class="text-container">添加购物车</span>
+      <span class="text-container">add to cart</span>
 
     </div>
 
